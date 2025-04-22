@@ -32,7 +32,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-[10rem] md:text-[14rem] lg:text-[18rem] font-bold text-[#f0ff9f] leading-none font-okay-jelly mb-6"
+          className="text-[6rem] sm:text-[8rem] md:text-[12rem] lg:text-[18rem] font-bold text-[#f0ff9f] leading-none font-okay-jelly mb-6"
           style={{ 
             textShadow: "0px 6px 12px rgba(0,0,0,0.6), 0px 2px 4px rgba(0,0,0,0.8)",
             letterSpacing: "-0.02em"
