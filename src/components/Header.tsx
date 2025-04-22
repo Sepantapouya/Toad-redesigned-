@@ -130,7 +130,7 @@ const Header = () => {
                     className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     <Image 
-                      src="/arb.png" 
+                      src="/Arb.png" 
                       alt="Arbitrum" 
                       width={16} 
                       height={16} 
@@ -145,7 +145,7 @@ const Header = () => {
                     className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     <Image 
-                      src="/optimism.png" 
+                      src="/Optimism.png" 
                       alt="Optimism" 
                       width={16} 
                       height={16} 
@@ -195,7 +195,7 @@ const Header = () => {
                   onClick={handleMobileMenuItemClick}
                 >
                   <Image 
-                    src="/arb.png" 
+                    src="/Arb.png" 
                     alt="Arbitrum" 
                     width={20} 
                     height={20} 
@@ -211,7 +211,7 @@ const Header = () => {
                   onClick={handleMobileMenuItemClick}
                 >
                   <Image 
-                    src="/optimism.png" 
+                    src="/Optimism.png" 
                     alt="Optimism" 
                     width={20} 
                     height={20} 
