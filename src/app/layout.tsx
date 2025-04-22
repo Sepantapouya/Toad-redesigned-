@@ -40,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${mulish.variable} ${gabarito.variable} ${rubikDistressed.variable} ${lilitaOne.variable} scroll-smooth`}>
-      <body>
+    <html lang="en" className={`${mulish.variable} ${gabarito.variable} ${rubikDistressed.variable} ${lilitaOne.variable} scroll-smooth overflow-x-hidden`}>
+      <body className="overflow-x-hidden">
         {children}
       </body>
     </html>

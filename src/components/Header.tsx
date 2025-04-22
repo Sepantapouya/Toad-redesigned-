@@ -61,7 +61,7 @@ const Header = () => {
         scrolled || mobileMenuOpen ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-6 md:px-8 lg:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - changes based on scroll position */}
           <Link href="/" className="flex items-center pl-0 ml-0 z-50 relative">
@@ -130,10 +130,10 @@ const Header = () => {
                     className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     <Image 
-                      src="/arbitrum-logo.svg" 
+                      src="/arb.png" 
                       alt="Arbitrum" 
-                      width={20} 
-                      height={20} 
+                      width={16} 
+                      height={16} 
                       className="mr-2" 
                     />
                     Arbitrum
@@ -145,10 +145,10 @@ const Header = () => {
                     className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     <Image 
-                      src="/optimism-logo.svg" 
+                      src="/optimism.png" 
                       alt="Optimism" 
-                      width={20} 
-                      height={20} 
+                      width={16} 
+                      height={16} 
                       className="mr-2" 
                     />
                     Optimism
@@ -164,13 +164,13 @@ const Header = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden fixed inset-0 bg-white z-40 pt-20 px-4 overflow-y-auto"
+            className="md:hidden fixed inset-0 bg-white z-40 pt-20 px-6 overflow-y-auto overflow-x-hidden"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex flex-col space-y-6 mt-8">
+            <div className="flex flex-col space-y-6 mt-8 w-full overflow-x-hidden">
               <Link 
                 href="#about" 
                 className="text-2xl text-gray-800 font-medium hover:text-[#8DC63F] py-3 border-b border-gray-100 transition-colors"
@@ -185,7 +185,7 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <div className="py-4 space-y-4">
+              <div className="py-4 space-y-4 w-full">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Get Started</h3>
                 <a 
                   href="https://app.toadn.com/arbitrum" 
@@ -195,10 +195,10 @@ const Header = () => {
                   onClick={handleMobileMenuItemClick}
                 >
                   <Image 
-                    src="/arbitrum-logo.svg" 
+                    src="/arb.png" 
                     alt="Arbitrum" 
-                    width={24} 
-                    height={24} 
+                    width={20} 
+                    height={20} 
                     className="mr-3" 
                   />
                   <span className="text-lg">Arbitrum</span>
@@ -211,10 +211,10 @@ const Header = () => {
                   onClick={handleMobileMenuItemClick}
                 >
                   <Image 
-                    src="/optimism-logo.svg" 
+                    src="/optimism.png" 
                     alt="Optimism" 
-                    width={24} 
-                    height={24} 
+                    width={20} 
+                    height={20} 
                     className="mr-3" 
                   />
                   <span className="text-lg">Optimism</span>

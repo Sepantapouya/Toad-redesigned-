@@ -11,6 +11,12 @@
   --dark-blue: #0F172A;
 }
 
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -19,6 +25,56 @@ body {
   & :focus-visible {
     outline: 3px solid var(--primary);
     outline-offset: 2px;
+  }
+}
+
+/* Make sure all containers respect viewport width */
+.container, .container-fluid, section, div {
+  max-width: 100%;
+}
+
+/* Add default horizontal padding to main containers */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 

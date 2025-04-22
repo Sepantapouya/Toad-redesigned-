@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section 
-      className="relative w-full h-screen" 
+      className="relative w-full h-screen overflow-hidden" 
       id="hero"
       style={{
         backgroundImage: "url('/banner.jpeg')",
@@ -26,13 +26,13 @@ const Hero = () => {
       ></div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center pt-10">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center pt-10 px-6 sm:px-8 md:px-12 overflow-hidden">
         {/* TOAD Large Text */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-[6rem] sm:text-[8rem] md:text-[12rem] lg:text-[18rem] font-bold text-[#f0ff9f] leading-none font-okay-jelly mb-6"
+          className="text-[6rem] sm:text-[8rem] md:text-[12rem] lg:text-[18rem] font-bold text-[#f0ff9f] leading-none font-okay-jelly mb-6 max-w-full"
           style={{ 
             textShadow: "0px 6px 12px rgba(0,0,0,0.6), 0px 2px 4px rgba(0,0,0,0.8)",
             letterSpacing: "-0.02em"
@@ -46,7 +46,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="text-base md:text-lg lg:text-xl text-white font-gabarito tracking-wider uppercase whitespace-nowrap mx-auto px-4"
+          className="text-base md:text-lg lg:text-xl text-white font-gabarito tracking-wider uppercase mx-auto px-4 max-w-full"
           style={{ textShadow: "0px 2px 4px rgba(0,0,0,0.5)", letterSpacing: "0.1em" }}
         >
           Trustless On-Chain Autonomous Delegate
