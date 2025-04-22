@@ -77,7 +77,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-dark-blue">Email Us</h3>
               </div>
               <p className="text-gray-600">
-                Our team is here to help. Send us an email and we'll get back to you as soon as possible.
+                Our team is here to help. Send us an email and we&apos;ll get back to you as soon as possible.
               </p>
               <a href="mailto:info@toadn.com" className="block mt-4 text-primary hover:underline">
                 info@toadn.com
@@ -129,7 +129,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-dark-blue">Message Sent!</h3>
                 <p className="text-gray-600">
-                  Thank you for reaching out. We'll be in touch with you shortly.
+                  Thank you for reaching out. We&apos;ll be in touch with you shortly.
                 </p>
               </div>
             ) : (

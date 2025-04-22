@@ -31,8 +31,17 @@ const counters = [
   }
 ];
 
+// Define the Counter props interface
+interface CounterProps {
+  value: number;
+  duration?: number;
+  symbol?: string;
+  suffix?: string;
+  color?: string;
+}
+
 // Animated counter component
-const Counter = ({ value, duration = 2, symbol = "", suffix = "", color = "text-blue-600" }) => {
+const Counter = ({ value, duration = 2, symbol = "", suffix = "", color = "text-blue-600" }: CounterProps) => {
   const [count, setCount] = useState(0);
   const nodeRef = useRef(null);
   const isInView = useInView(nodeRef, { once: true, amount: 0.5 });
@@ -41,7 +50,7 @@ const Counter = ({ value, duration = 2, symbol = "", suffix = "", color = "text-
     if (!isInView) return;
 
     let start = 0;
-    const end = parseInt(value);
+    const end = value;
     const incrementTime = (duration * 1000) / end;
     
     // Handle edge case for small values

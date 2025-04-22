@@ -45,7 +45,7 @@ const About = () => {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4 font-gabarito">Mission</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                TOAD exists to democratize governance by creating an unbiased, accessible bridge between communities and their decision-making processes. We're building the future of decentralized governance where technology amplifies collective wisdom rather than replacing it.
+                TOAD exists to democratize governance by creating an unbiased, accessible bridge between communities and their decision-making processes. We&apos;re building the future of decentralized governance where technology amplifies collective wisdom rather than replacing it.
               </p>
             </motion.div>
           </div>
